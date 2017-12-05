@@ -68,7 +68,6 @@ mod tests {
     extern crate test;
 
     use super::*;
-    use self::test::Bencher;
 
     #[test]
     fn test_parse_input() {
