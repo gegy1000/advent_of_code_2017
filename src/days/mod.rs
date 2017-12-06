@@ -3,6 +3,7 @@ mod corruption_checksum;
 mod spiral_memory;
 mod passphrases;
 mod twisty_trampolines;
+mod memory_reallocation;
 
 use utils;
 
@@ -14,6 +15,7 @@ pub fn run(day: u32, part: utils::Part, input: &String) -> Result<String, String
         3 => spiral_memory::run(part, input),
         4 => passphrases::run(part, input),
         5 => twisty_trampolines::run(part, input),
+        6 => memory_reallocation::run(part, input),
         _ => Err("Given day does not exist".to_string())
     }
 }
